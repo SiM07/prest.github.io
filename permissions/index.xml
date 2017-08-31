@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Permissions on pREST</title>
-    <link>postgres.rest/permissions/</link>
+    <link>https://postgres.rest/permissions/</link>
     <description>Recent content in Permissions on pREST</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Aug 2017 19:06:32 -0300</lastBuildDate>
     
-	<atom:link href="postgres.rest/permissions/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://postgres.rest/permissions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Permissions</title>
-      <link>postgres.rest/permissions/</link>
+      <link>https://postgres.rest/permissions/</link>
       <pubDate>Wed, 30 Aug 2017 19:06:32 -0300</pubDate>
       
-      <guid>postgres.rest/permissions/</guid>
+      <guid>https://postgres.rest/permissions/</guid>
       <description>Restrict mode In the prest.toml you can configure read/write/delete permissions of each table.
 [access] restrict = true # can access only the tables listed below  restrict = false: (default) the prest will serve in publish mode. You can write/read/delete everydata without configure permissions.
 restruct = true: you need configure the permissions of all tables.

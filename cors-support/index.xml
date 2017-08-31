@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cors-supports on pREST</title>
-    <link>postgres.rest/cors-support/</link>
+    <link>https://postgres.rest/cors-support/</link>
     <description>Recent content in Cors-supports on pREST</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Aug 2017 19:06:49 -0300</lastBuildDate>
     
-	<atom:link href="postgres.rest/cors-support/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://postgres.rest/cors-support/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CORS Support</title>
-      <link>postgres.rest/cors-support/</link>
+      <link>https://postgres.rest/cors-support/</link>
       <pubDate>Wed, 30 Aug 2017 19:06:49 -0300</pubDate>
       
-      <guid>postgres.rest/cors-support/</guid>
+      <guid>https://postgres.rest/cors-support/</guid>
       <description>In the prest.toml you can configurate the CORS allowed origin:
 Example:
 [cors] alloworigin = [&amp;quot;http://postgres.rest&amp;quot;, &amp;quot;http://foo.com&amp;quot;]  </description>

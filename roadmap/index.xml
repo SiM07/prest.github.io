@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Roadmaps on pREST</title>
-    <link>postgres.rest/roadmap/</link>
+    <link>https://postgres.rest/roadmap/</link>
     <description>Recent content in Roadmaps on pREST</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Apr 2016 20:08:11 +0100</lastBuildDate>
     
-	<atom:link href="postgres.rest/roadmap/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://postgres.rest/roadmap/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Roadmap</title>
-      <link>postgres.rest/roadmap/</link>
+      <link>https://postgres.rest/roadmap/</link>
       <pubDate>Sat, 23 Apr 2016 20:08:11 +0100</pubDate>
       
-      <guid>postgres.rest/roadmap/</guid>
+      <guid>https://postgres.rest/roadmap/</guid>
       <description></description>
     </item>
     
