@@ -29,7 +29,7 @@ docker run -e PREST_HTTP_PORT=3000 \ -e PREST_PG_HOST=127.</description>
       <pubDate>Wed, 30 Aug 2017 19:05:46 -0300</pubDate>
       
       <guid>https://postgres.rest/configurations/</guid>
-      <description>Configurations Via environment variables or via toml file.
+      <description>Via environment variables or via toml file.
 Environment vars  PREST_HTTP_PORT (default 3000) PREST_PG_HOST (default 127.0.0.1) PREST_PG_USER PREST_PG_PASS PREST_PG_DATABASE PREST_PG_PORT (default 5432) PREST_JWT_KEY  TOML Optionally the pREST can be configured by TOML file.
  You can follow this sample and create your own prest.toml file and put this on the same folder that you run prest command.  migrations = &amp;quot;./migrations&amp;quot; [http] port = 6000 [jwt] key = &amp;quot;secret&amp;quot; [pg] host = &amp;quot;127.</description>
     </item>
@@ -40,7 +40,7 @@ Environment vars  PREST_HTTP_PORT (default 3000) PREST_PG_HOST (default 127.0.0.
       <pubDate>Wed, 30 Aug 2017 19:06:04 -0300</pubDate>
       
       <guid>https://postgres.rest/query-statements/</guid>
-      <description>Query Statements Filter (WHERE) GET /DATABASE/SCHEMA/TABLE?FIELD=$eq.VALUE  Query Operators:
+      <description>Filter (WHERE) GET /DATABASE/SCHEMA/TABLE?FIELD=$eq.VALUE  Query Operators:
    Name Description     $eq Matches values that are equal to a specified value.   $gt Matches values that are greater than a specified value.   $gte Matches values that are greater than or equal to a specified value.   $lt Matches values that are less than a specified value.   $lte Matches values that are less than or equal to a specified value.</description>
     </item>
     

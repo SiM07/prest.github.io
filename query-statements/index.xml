@@ -17,7 +17,7 @@
       <pubDate>Wed, 30 Aug 2017 19:06:04 -0300</pubDate>
       
       <guid>https://postgres.rest/query-statements/</guid>
-      <description>Query Statements Filter (WHERE) GET /DATABASE/SCHEMA/TABLE?FIELD=$eq.VALUE  Query Operators:
+      <description>Filter (WHERE) GET /DATABASE/SCHEMA/TABLE?FIELD=$eq.VALUE  Query Operators:
    Name Description     $eq Matches values that are equal to a specified value.   $gt Matches values that are greater than a specified value.   $gte Matches values that are greater than or equal to a specified value.   $lt Matches values that are less than a specified value.   $lte Matches values that are less than or equal to a specified value.</description>
     </item>
     
