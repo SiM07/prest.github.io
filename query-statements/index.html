@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 	<meta name="description" content="A fully RESTful API from any existing PostgreSQL database.">
-	<meta name="generator" content="Hugo 0.25.1" />
+	<meta name="generator" content="Hugo 0.27.1" />
 	
 	<title>Query Statements &mdash; pREST</title>
 	
@@ -85,12 +85,32 @@
 
 <tr>
 <td>$null</td>
-<td>Matches if field is null</td>
+<td>Matches if field is null.</td>
 </tr>
 
 <tr>
 <td>$notnull</td>
-<td>Matches if field is not null</td>
+<td>Matches if field is not null.</td>
+</tr>
+
+<tr>
+<td>$true</td>
+<td>Matches if field is true.</td>
+</tr>
+
+<tr>
+<td>$nottrue</td>
+<td>Matches if field is not true.</td>
+</tr>
+
+<tr>
+<td>$false</td>
+<td>Matches if field is false.</td>
+</tr>
+
+<tr>
+<td>$notfalse</td>
+<td>Matches if field is not false.</td>
 </tr>
 </tbody>
 </table>
@@ -436,7 +456,7 @@ http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_renderer=xml (JSON by default)
 			<div class="footer">
 	&copy; 2017 <a href="https://github.com/digitalcraftsman">Digitalcraftsman</a>
 	|
-	Powered by <a href="http://gohugo.io/">Hugo 0.25.1</a>
+	Powered by <a href="http://gohugo.io/">Hugo 0.27.1</a>
 	&amp; <a href="https://github.com/digitalcraftsman/hugo-alabaster-theme">Alabaster</a>
 	
 </div>
