@@ -63,6 +63,12 @@ user = &quot;postgres&quot;
 pass = &quot;mypass&quot;
 port = 5432
 database = &quot;prest&quot;
+
+[ssl]
+mode = &quot;disable&quot;
+sslcert = &quot;./PATH&quot;
+sslkey = &quot;./PATH&quot;
+sslrootcert = &quot;./PATH&quot;
 </code></pre>
 
 <h2 id="authorization">Authorization</h2>
@@ -72,6 +78,18 @@ database = &quot;prest&quot;
 </ul>
 
 <pre><code class="language-sh">Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
+</code></pre>
+
+<h3 id="ssl">SSL</h3>
+
+<ul>
+<li>There is 4 options to set on ssl mode:</li>
+</ul>
+
+<pre><code class="language-toml">&quot;disable&quot; -  # no SSL (default)
+&quot;require&quot; - # Always SSL (skip verification)
+&quot;verify-ca&quot; - # Always SSL (verify that the certificate presented by the server was signed by a trusted CA)
+&quot;verify-full&quot; - # Always SSL (verify that the certification presented by the server was signed by a trusted CA and the server host name matches the one in the certificate)
 </code></pre>
 
 <h3 id="debug-mode">Debug Mode</h3>

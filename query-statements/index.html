@@ -261,6 +261,15 @@ http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_renderer=xml (JSON by default)
 </tbody>
 </table>
 
+<h2 id="distinct">DISTINCT</h2>
+
+<p>To use <em>DISTINCT</em> clause with SELECT, follow this syntax <code>_distinct=true</code>.</p>
+
+<p>Examples:</p>
+
+<pre><code>    GET /DATABASE/SCHEMA/TABLE/?_distinct=true
+</code></pre>
+
 <h2 id="order-by">ORDER BY</h2>
 
 <p>Using <em>ORDER BY</em> in queries you must pass in <em>GET</em> request the attribute <code>_order</code> with fieldname(s) as value. For <em>DESC</em> order, use the prefix <code>-</code>. For <em>multiple</em> orders, the fields are separated by comma.</p>
