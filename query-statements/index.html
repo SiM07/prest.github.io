@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 	<meta name="description" content="A fully RESTful API from any existing PostgreSQL database.">
-	<meta name="generator" content="Hugo 0.27.1" />
+	<meta name="generator" content="Hugo 0.37-DEV" />
 	
 	<title>Query Statements &mdash; pREST</title>
 	
@@ -193,20 +193,23 @@ http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_renderer=xml (JSON by default)
 
 <h2 id="join">JOIN</h2>
 
-<p>Using query string to JOIN tables, example:</p>
-
-<pre><code>/DATABASE/SCHEMA/TABLE?_join=inner:users:friends.userid:$eq:users.id
+<pre><code>/DATABASE/SCHEMA/Table?_join=Type:Table2:Table.field:Operator:Table2.field
 </code></pre>
 
 <p>Parameters:</p>
 
 <ol>
-<li>Join type</li>
-<li>Table</li>
-<li>Table field 1</li>
-<li>Operator (=, &lt;, &gt;, &lt;=, &gt;=)</li>
-<li>Table field 2</li>
+<li>Type (INNER, LEFT, RIGHT, OUTER)</li>
+<li>Table2</li>
+<li>Table.field</li>
+<li>Operator ($eq, $lt, $gt, $lte, $gte)</li>
+<li>Table2.field</li>
 </ol>
+
+<p>Using query string to JOIN tables, example:</p>
+
+<pre><code>/DATABASE/SCHEMA/friends?_join=inner:users:friends.userid:$eq:users.id
+</code></pre>
 
 <h2 id="query-operators">Query Operators</h2>
 
@@ -360,7 +363,7 @@ http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_renderer=xml (JSON by default)
 
 <p>Example:</p>
 
-<pre><code>GET /DATABASE/SCHEMA/TABLE/?_select=fieldname00,sum:fieldname01&amp;_groupby=fieldname01--&gt;having:sum:fieldname01:$gt:500
+<pre><code>GET /DATABASE/SCHEMA/TABLE/?_select=fieldname00,sum:fieldname01&amp;_groupby=fieldname01-&gt;&gt;having:sum:fieldname01:$gt:500
 </code></pre>
 
 
@@ -463,9 +466,9 @@ http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_renderer=xml (JSON by default)
 <div class="clearer"></div>
 </div>
 			<div class="footer">
-	&copy; 2017 <a href="https://github.com/digitalcraftsman">Digitalcraftsman</a>
+	&copy; 2018 <a href="https://github.com/digitalcraftsman">Digitalcraftsman</a>
 	|
-	Powered by <a href="http://gohugo.io/">Hugo 0.27.1</a>
+	Powered by <a href="http://gohugo.io/">Hugo 0.37-DEV</a>
 	&amp; <a href="https://github.com/digitalcraftsman/hugo-alabaster-theme">Alabaster</a>
 	
 </div>
