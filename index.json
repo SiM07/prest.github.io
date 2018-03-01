@@ -42,6 +42,13 @@
 	"content": "In the prest.toml you can configurate the CORS allowed origin:\nExample:\n[cors] alloworigin = [\u0026quot;http://postgres.rest\u0026quot;, \u0026quot;http://foo.com\u0026quot;]  "
 },
 {
+	"uri": "https://postgres.rest/case-studies/",
+	"title": "Case studies",
+	"tags": [],
+	"description": "",
+	"content": " Company and/or project uses pREST? Describe your use case here.\nThese are just a few companies and projects that are using (trusting) pREST.\nCompanies    Company Site     Nuveo nuveo.ai   Filmow filmow.com   Levpay levpay.com    "
+},
+{
 	"uri": "https://postgres.rest/prest-as-web-framework/",
 	"title": "Extending (framework)",
 	"tags": [],

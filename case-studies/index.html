@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
 <link rel="icon" href="/logo.png" type="image/x-icon" />
 
-    <title>Extending (framework) :: Documentation for pREST</title>
+    <title>Case studies :: Documentation for pREST</title>
     
     
     <link href="/css/nucleus.css?1519941221" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/prest-as-web-framework/">
+  <body class="" data-url="/case-studies/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -218,8 +218,8 @@
   
     
     <li data-nav-id="/case-studies/" title="Case studies" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/case-studies/">
@@ -242,8 +242,8 @@
   
     
     <li data-nav-id="/prest-as-web-framework/" title="Extending (framework)" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/prest-as-web-framework/">
@@ -385,7 +385,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/prest/prest.github.io/tree/gh-pages/contentprest-as-web-framework/_index.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/prest/prest.github.io/tree/gh-pages/contentcase-studies/_index.en.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -400,6 +400,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -408,7 +410,7 @@
             
           
           
-            <a href='/'>Getting Started</a> > Extending (framework)
+            <a href='/'>Getting Started</a> > Case studies
           
          
           
@@ -416,14 +418,28 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#companies">Companies</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Case studies</h1>
           
 
         
@@ -431,55 +447,43 @@
 
 
 
-<p>pREST was developed with the possibility of using it as a web framework, being able to use it based on its API, you create new endpoints and place middleware, adapting the pREST to your need.</p>
+<p>Company and/or project uses pREST? Describe your use case <a href="https://github.com/prest/prest/issues/new?title=Case%20Studies:%20">here</a>.</p>
 
-<h3 id="sample-hello-world">Sample Hello World</h3>
+<p>These are just a few companies and projects that are using (trusting) pREST.</p>
 
-<p>In order to create custom modules for pREST you need extends the router and register the custom new routes.</p>
+<h2 id="companies">Companies</h2>
 
-<pre><code class="language-go">package main
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Site</th>
+</tr>
+</thead>
 
-import (
-	&quot;net/http&quot;
+<tbody>
+<tr>
+<td>Nuveo</td>
+<td><a href="https://nuveo.ai/">nuveo.ai</a></td>
+</tr>
 
-	&quot;github.com/prest/adapters/postgres&quot;
-	&quot;github.com/prest/cmd&quot;
-	&quot;github.com/prest/config&quot;
-	&quot;github.com/prest/config/router&quot;
-	&quot;github.com/prest/middlewares&quot;
-)
+<tr>
+<td>Filmow</td>
+<td><a href="https://filmow.com/">filmow.com</a></td>
+</tr>
 
-func main() {
-	config.Load()
-
-	// Load Postgres Adapter
-	postgres.Load()
-
-	// Get pREST app
-	middlewares.GetApp()
-
-	// Get pPREST router
-	r := router.Get()
-
-	// Register custom routes
-	r.HandleFunc(&quot;/ping&quot;, Pong).Methods(&quot;GET&quot;)
-
-	// Call pREST cmd
-	cmd.Execute()
-}
-
-func Pong(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(&quot;Pong!&quot;))
-}
-</code></pre>
+<tr>
+<td>Levpay</td>
+<td><a href="https://levpay.com/">levpay.com</a></td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -594,40 +598,6 @@ func Pong(w http.ResponseWriter, r *http.Request) {
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -640,8 +610,23 @@ func Pong(w http.ResponseWriter, r *http.Request) {
             
         
                     
+                        
             
-        
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
                     
                         
             
@@ -655,6 +640,9 @@ func Pong(w http.ResponseWriter, r *http.Request) {
                     
                     
 
+                    
+            
+        
                     
             
         
@@ -675,6 +663,22 @@ func Pong(w http.ResponseWriter, r *http.Request) {
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -682,10 +686,10 @@ func Pong(w http.ResponseWriter, r *http.Request) {
 
 
         
-            <a class="nav nav-prev" href="/case-studies/" title="Case studies"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/cors-support/" title="CORS Support"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/prest-as-web-framework/custom-middlewares/" title="Custom middlewares" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/prest-as-web-framework/" title="Extending (framework)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
