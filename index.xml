@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting Started on Documentation for pREST</title>
+    <title>Welcome on Documentation for pREST</title>
     <link>https://postgres.rest/</link>
-    <description>Recent content in Getting Started on Documentation for pREST</description>
+    <description>Recent content in Welcome on Documentation for pREST</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Apr 2016 15:21:22 +0200</lastBuildDate>

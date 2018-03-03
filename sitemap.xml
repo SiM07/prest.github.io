@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://postgres.rest/getting-started/</loc>
+    <lastmod>2016-04-23T15:21:22+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://postgres.rest/</loc>
     <lastmod>2016-04-23T15:21:22+02:00</lastmod>
   </url>

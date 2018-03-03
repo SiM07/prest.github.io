@@ -1,10 +1,17 @@
 [
 {
-	"uri": "https://postgres.rest/",
+	"uri": "https://postgres.rest/getting-started/",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": " What is pREST? pREST is a way to serve a RESTful API from any databases.\nWe started with support for Postgres (internal need of Nuveo), today we have support for adapters, database list that we supported.\nProblem There is PostgREST written in Haskell, but keeping Haskell software in production is not an easy job. With this need pREST was born.\nRead more.\nDatabases supported  PostgreSQL  9.4 or higher  MySQL (development)  Supported Operating system  Linux  i386 AMD 64 ARM 5 ARM 6 ARM 7 ARM 64 MIPS MIPS 64 MIPS LE MIPS 64 LE  macOS  i386 AMD 64  Windows  i386 AMD 64  BSD (we need your help)  Installation binary Download the latest version here.\nhomebrew brew install prest  go get go get -u github.com/prest/prest  Running Initally can use some environment variables by example:\n PREST_HTTP_PORT (default 3000) PREST_PG_HOST (default 127.0.0.1) PREST_PG_USER PREST_PG_PASS PREST_PG_DATABASE PREST_PG_PORT (default 5432) PREST_JWT_KEY  PREST_PG_USER=postgres \\ PREST_PG_DATABASE=prest \\ PREST_PG_PORT=5432 \\ PREST_HTTP_PORT=3010 \\ prest # Binary installed  In case needs use it via Docker: https://hub.docker.com/r/prest/prest/\ndocker pull prest/prest docker run -e PREST_HTTP_PORT=3000 \\ -e PREST_PG_HOST=127.0.0.1 \\ -e PREST_PG_USER=postgres \\ -e PREST_PG_PASS=pass \\ prest/prest  Versions  lastest (developer) 0.3.0 (latest stable release)  "
+	"content": " Installation Binary For any OS you can download the latest version here.\ngo get go get -u github.com/prest/prest  MacOS If none of the above suits you, there\u0026rsquo;s still an option of installing using Homebrew\nbrew install prest  With docker We only will need to download the pREST image from Docker Hub with:\ndocker pull prest/prest  Running With the binary or homebrew or go get You can pass the necessary variables to the binary as follows:\nPREST_PG_USER=postgres \\ PREST_PG_DATABASE=prest \\ PREST_PG_PORT=5432 \\ PREST_HTTP_PORT=3010 \\ prest # Binary installed  With docker Considering you already did the pull in the previous step:\ndocker run -e PREST_HTTP_PORT=3000 \\ -e PREST_PG_HOST=127.0.0.1 \\ -e PREST_PG_USER=postgres \\ -e PREST_PG_PASS=pass \\ prest/prest  or if use Docker Compose (there\u0026rsquo;s an example in the repository)\ndocker-compose up  For more details on how to configure and other environment variables got to Configurations\n"
+},
+{
+	"uri": "https://postgres.rest/",
+	"title": "Welcome",
+	"tags": [],
+	"description": "",
+	"content": " What is pREST? pREST is a way to serve a RESTful APIs for any database. Right now we support PostgreSQL and support to others databases such as MySQL are being developed by the community.\nProblem There is PostgREST written in Haskell, but keeping Haskell software in production is not an easy job. With this need pREST was born.\nRead more.\nDatabases supported  PostgreSQL  9.4 or higher  MySQL (development)  Supported Operating system  Linux  i386 AMD 64 ARM 5 ARM 6 ARM 7 ARM 64 MIPS MIPS 64 MIPS LE MIPS 64 LE  macOS  i386 AMD 64  Windows  i386 AMD 64  BSD (we need your help)  Versions  lastest (developer) 0.3.0 (latest stable release)  "
 },
 {
 	"uri": "https://postgres.rest/configurations/",
@@ -81,7 +88,7 @@
 	"title": "Roadmap",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Issues We have several issues for improvements and bug fixes, see below:\n"
 },
 {
 	"uri": "https://postgres.rest/categories/",
